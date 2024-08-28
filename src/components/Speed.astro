@@ -1,3 +1,6 @@
+---
+import { useEffect } from 'react'; // Importa useEffect si usas React en tu proyecto Astro
+---
 
 <style>
   .animate-width {
@@ -50,14 +53,14 @@
       const percentages = document.querySelectorAll('.count-up');
 
       const updatePercentages = () => {
-        bars.forEach((bar) => {
+        bars.forEach(bar => {
           const speed = bar.getAttribute('data-speed');
           if (speed) {
-            bar.style.width = `${speed}%`;
+            (bar as HTMLElement).style.width = `${speed}%`; // Use type assertion to avoid type error
           }
         });
 
-        percentages.forEach((percentElem) => {
+        percentages.forEach(percentElem => {
           const barId = percentElem.id.replace('percentage', 'bar');
           const bar = document.getElementById(barId);
           const target = parseInt(bar?.getAttribute('data-speed') || '0', 10);
