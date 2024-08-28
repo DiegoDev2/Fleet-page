@@ -1,0 +1,41 @@
+<header class="animate-fade-up text-black flex flex-wrap items-center px-10 justify-between sm:px-10 py-2">
+    <div class="flex items-center space-x-1 rounded-md px-1 py-2">
+        <img src="./logo.png" alt="Logo" class="h-12 w-auto">
+        <span class="text-lg font-bold">LattePkg</span>
+    </div>
+    
+    <!-- Botón de menú hamburguesa para pantallas pequeñas -->
+    <button class="block lg:hidden text-black focus:outline-none" id="menu-button">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </button>
+
+    <!-- Navegación principal -->
+    <nav class="hidden lg:flex flex-col lg:flex-row items-center space-x-6 rounded-md px-4 py-2 w-full lg:w-auto mt-4 lg:mt-0 transition-transform duration-300 ease-in-out" id="nav-menu">
+        <a href="https://github.com/CodeDiego15/LattePkg" target="_blank" class="hover:text-gray-400">GitHub</a>
+        <a href="#" class="hover:text-gray-400">Contribute</a>
+        <a href="https://github.com/CodeDiego15/LattePkg/discussions/34" target="_blank" class="hover:text-gray-400">Forum</a>
+    </nav>
+
+    <div class="hidden lg:flex items-center space-x-4 rounded-md px-4 py-2 transition-transform duration-300 ease-in-out" id="button-container">
+        <a href="https://github.com/CodeDiego15/LattePkg/releases" id="button-git" class="bg-black hover:bg-neutral-800 text-white px-4 py-2 rounded-md ">Download</a>
+    </div>
+</header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuButton = document.getElementById('menu-button');
+        const navMenu = document.getElementById('nav-menu');
+        const buttonContainer = document.getElementById('button-container');
+    
+        if (menuButton && navMenu && buttonContainer) {
+            menuButton.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+                buttonContainer.classList.toggle('hidden');
+                navMenu.classList.toggle('transition-transform');
+                buttonContainer.classList.toggle('transition-transform');
+            });
+        }
+    });
+    </script>
