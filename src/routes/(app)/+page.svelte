@@ -25,7 +25,4 @@
 	<meta name="twitter:site" content="@Sikandar_Bhide" />
 </svelte:head>
 <HeroSection />
-<ClientSection />
-<SphereMask />
 
-<CtaSection />

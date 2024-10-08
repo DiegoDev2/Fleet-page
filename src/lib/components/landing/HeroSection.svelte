@@ -20,8 +20,8 @@
 	<div
 		class="backdrop-filter-[12px] group inline-flex h-7 -translate-y-4 animate-fade-in items-center justify-between gap-1 rounded-full border border-white/5 bg-white/10 px-3 text-xs text-white opacity-0 transition-all ease-in hover:cursor-pointer hover:bg-white/20 dark:text-black"
 	>
-		<AnimatedShinyText class="inline-flex items-center justify-center">
-			<span>✨ Introducing LattePkg</span>
+		<AnimatedShinyText  class="inline-flex items-center justify-center">
+			<span><a href="https://github.com/DiegoDev2/Fleet">Fleet Github</a></span>
 			{' '}
 			<ArrowRightIcon
 				class="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"
@@ -31,7 +31,7 @@
 	<h1
 		class="-translate-y-4 animate-fade-in text-balance bg-gradient-to-br from-black from-30% to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent opacity-0 [--animation-delay:200ms] dark:from-white dark:to-white/40 sm:text-6xl md:text-7xl lg:text-8xl"
 	>
-		LattePkg is a
+		Fleet is a
 		<br class="hidden md:block" />
 		{' '}
 		Package Manager On Go
@@ -45,14 +45,15 @@
 		In Terminal.
 		
 	</p>
-	<Button
+	
+	<!-- <Button
 		class="-translate-y-4 animate-fade-in gap-1 rounded-lg text-white opacity-0 ease-in-out [--animation-delay:600ms] dark:text-black"
 	>
-		<span>Get Started</span>
+		 <span>Get Started</span>
 		<ArrowRightIcon
 			class="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1"
 		/>
-	</Button>
+	</Button> -->
 	<div
 		use:inview={{
 			unobserveOnEnter: true,
@@ -66,24 +67,10 @@
 				? 'before:animate-image-glow'
 				: ''}"
 		>
-			<BorderBeam
-				size={200}
-				duration={12}
-				delay={0}
-				colorFrom="var(--color-one)"
-				colorTo="var(--color-two)"
-			/>
+			
 
-			<img
-				src={HeroDarkImg}
-				alt="HeroDarkImage"
-				class="relative hidden size-full rounded-[inherit] border object-contain dark:block"
-			/>
-			<img
-				src={HeroLightImg}
-				alt="HeroLightImage"
-				class="relative block size-full rounded-[inherit] border object-contain dark:hidden"
-			/>
+			
+			
 		</div>
 	</div>
 </section>
