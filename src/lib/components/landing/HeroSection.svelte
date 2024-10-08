@@ -72,8 +72,8 @@
       size={200}
       duration={12}
       delay={0}
-      colorFrom="var(--color-one)"
-      colorTo="var(--color-two)"
+      colorFrom="#dbdad9"
+      colorTo="#8c8c8b"
     />
 
     <img

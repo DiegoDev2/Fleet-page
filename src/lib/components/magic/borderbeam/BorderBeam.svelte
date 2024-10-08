@@ -5,8 +5,8 @@
     export let duration = 15;
     export let anchor = 90;
     export let borderWidth = 1.5;
-    export let colorFrom = "#ffaa40";
-    export let colorTo = "#9c40ff";
+    export let colorFrom = "#dbdad9";
+    export let colorTo = "#8c8c8b";
     export let delay = 0;
     let delaySec = delay + "s";
   
