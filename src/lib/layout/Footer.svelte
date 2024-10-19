@@ -73,21 +73,7 @@
 		<div class="gap-4 p-4 px-8 py-16 sm:pb-16 md:flex md:justify-between">
 			<div class="mb-12 flex flex-col gap-4">
 				<a href="https://fleetpkg.vercel.app" class="flex items-center gap-2">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="24"
-						height="24"
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						stroke-width="1"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						class="lucide lucide-floor-plan size-8"
-						><path
-							d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5"
-						/><path d="M9 3v7" /><path d="M21 10h-7" /><path d="M3 15h9" /></svg
-					>
+					<img src="./favicon1.png" alt="logo" class="h-16 md:h-16" />
 					<span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
 						Fleet
 					</span>
